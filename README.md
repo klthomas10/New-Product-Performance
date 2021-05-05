@@ -34,15 +34,15 @@ For this project, we have elected to eliminate the most extreme outlier values; 
 Scale Data
 Finally, to round out the preprocessing phase, we scale the data. This is done to apply a layer of standardization across the independent variables, which most often possess different metrics or values assigned to the attributes. Without scaling the machine learning algorithms tend to assign a greater weight to larger values and a lesser value to smaller values, regardless of their units of measure. We scale all columns containing numeric values, excluding labels.
 
-Feature EngineeringCorrelation Matrix, Dummy Variables, and Collinearity 
+Feature Engineering - Correlation Matrix, Dummy Variables, and Collinearity 
 3.1 Correlation Matrix
 Each cell within this table illustrates the correlation between two variable. The purpose of this matrix is to summarize the data and guide further analysis as a diagnostic tool.
 In this specific matrix we can identify a strong correlation between volume of sales and customer ratings- both regarding service and product performance.
-Feature EngineeringCorrelation Matrix, Dummy Variables, and Collinearity 
+Feature Engineering - Correlation Matrix, Dummy Variables, and Collinearity 
 3.2 Dummy Variables
 For this project we are trying to determine which new product types will perform best based on the historical data trends of existing products. In order to further examine the existing product types, which are categorical in nature, we will need to create placeholders by assigning them numeric values between 0 and 1. By creating dummy variables we are, in essence, indicating the absence or presence of a specified condition. These values can then be summed, marginalized and integrated over. 
 
-Feature EngineeringCorrelation Matrix, Dummy Variables, and Collinearity 
+Feature Engineering - Correlation Matrix, Dummy Variables, and Collinearity 
 3.3 Collinearity
 The ability to interpret models is a key part of being a data scientist.
 For regression models to perform optimally we want to ensure, to the best of our ability, that the regression coefficients are uniquely determined. If the features are too closely correlated, they have too great an influence on other features. This special case is referred to as collinearity.
@@ -54,7 +54,9 @@ RMSE = 346.56: among the lowest of all the algorithms even with have a few remai
 R-Squared = 0.887: is the closest value to 1.0 of all values. This is expected given the inverse relationship between RMSE and r-squared.
 MAE = 224.06: this is our error-meter. For this reason, the lower the value or the closer to zero we can get, the better.
 
-Final Predictions5.1 RESULTSApplication of SVM modeling on the New Products Data Set
+Final Predictions
+5.1 RESULTS
+Application of SVM modeling on the New Products Data Set
 
 Impact of Customer Reviews on Product Volume
 
